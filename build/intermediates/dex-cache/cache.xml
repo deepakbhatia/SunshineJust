@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.3.2_3661fa7d32101934a1213883b0a32bcec584df78/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.0.1_eb96364e5b4d7827c59d150b95d245af22117add/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_0870798babf7316c6f6e1ce660c75a9655a65b57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_5f41be3768abb5a8c062379fbb1fe5a8538c90b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_66ccebaa99fe97db7e47f513ab4e36bc59457dbb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_67a6b1343a1ea01f917a2f92700fe4b494e004ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.4.0_0a614c95345ed6057b4e5ac3fa66e3674accaa0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_2904db4e7238d49a2afb613050b362f6484c8462/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_85a4ef694a3f9fb3b9ba13175b81847cea81e926/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_8ebcf3407d05b63989e07246c8c084d0436a4c9b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_088bdf3c0a86f6efd0ad21c7b3db2024e0a3c883/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_8c7b3df3fa1da61e29f2e79d12f5c531fbea39f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7b9b5b35b1f24fffbfc59987b05481d8ff26cfc4">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_4798cc0faadf5e6d47b690d4c64d136c3d2b6774/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_95429333ae7f4d5d6c89a70b8cc9d5da1c561370/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4700f436ede140fb804204f806c9cc3f08e386f4">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-25.0.1_2ac222fbf55c89242234b2c4ae1cbd4d30c5e147/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_c6ab944aba5657c5a4873be67a244fcd4575f42c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6baa3c6f1a8e0a6eca980a39bddb8eae579e6d03">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f92fce0b74db63f7cd1430a8faac5d342fe47150/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_be992ce7544162d0689bca1b124e0dd723f381bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_3294d3271e316eb14a8498a7599c345292822aac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ad53564cebb793210e082acdb44ff7a11e32d542">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c5814a3f0e5cddf17f60ecccb15947202f696f32/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_22d48619021527ec0fde8efebe750121c9966817/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c3e36ef2d2656874da21b14828cdb6d8ab2c010a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_6823fe850f4d524be8e413869a54dc321fd52405/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.android.support/palette-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f68018b5ddc2493f5e5cecc5601c05d0539281a">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-25.1.0_393e5cd8cffc30e0f0faca05d8189625d5c9f359/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_4e91db4020fb923deb04341376370e5fe12d92d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_1d3b216cde29fdc664e9d27947b6f83af83e50ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.1_f0593cba6e3651bca56837236890a24159eb54db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_d6a609d0b12c4d73b206f8cd342d95fdcddd22a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_f3128786b33d7d7821b6b285634328951f640284/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_9fed20dd728e22ac12e930209ba83e7a43b2b44a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.google.android.support/wearable/2.0.0-beta1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ac293d0ffbcbf7333f3a88268b702a33e5c7d2e8">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.support-wearable-2.0.0-beta1_95586836e81c283b057b33be45a0a7b43488255d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_e7e048bb2c4e1103762d84965f8e11737e4fb4db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_32ef1beae49b866dce10858fbb8797b461fce686/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_fefa3decddf0ed2bd952f0408e4d24237747e904/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0eac9fa3088ad7d1a1af25a84b4e4671ef67befc">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_721d1a746aa012274aca1c78cf8dbe9e6c23c58c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_bffe4926c6f52e5c1812c1bcc91a49097da3e618/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_d68dd5c7d948f12e6a58fb5a77ccd98d80f0dffe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.4.0_65ea0957b25fcac8be0c5a5a4ffb88fe79563bf6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_656263486fa3145b411b62b9986cd0a968354ac9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_d243ef41ac7c4344fa70a70f3f6e9efab2b01483/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.4.0_bd4c371bd4984fa685fbed426a59d92579e47172/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1acf13f1b7d8232af78a30833f9a966d1394c84">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.4.0_86b2fec6f636ef081e13a64dfb63139a3da0d58b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.1_b6bec19a3ec8203cdc6cda675ccee45fe4976e3d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_76c56a15dbabf84ea4b4a4d3a2727d12ca46b472/classes.dex" />
+    </item>
+
+</items>

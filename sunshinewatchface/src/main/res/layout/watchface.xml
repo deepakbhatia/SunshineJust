@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/watch_face_margin"
+        android:layout_marginEnd="@dimen/watch_face_margin"
+        android:layout_marginLeft="@dimen/watch_face_margin"
+        android:layout_marginStart="@dimen/watch_face_margin"
+
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/highTemp"
+        android:layout_above="@+id/weatherIcon"
+        android:layout_toLeftOf="@+id/weatherIcon"
+        android:layout_toStartOf="@+id/weatherIcon"
+        style="@style/WatchFaceDataStyle"
+        tools:text="-40°C"/>
+    <TextView
+        android:id="@+id/lowTemp"
+        android:layout_above="@+id/weatherIcon"
+        android:layout_toRightOf="@+id/weatherIcon"
+        android:layout_toEndOf="@+id/weatherIcon"
+        style="@style/WatchFaceDataStyle"
+
+        tools:text="-40°F"/>
+    <TextView
+        android:id="@+id/weatherDesc"
+
+        android:layout_below="@+id/weatherIcon"
+        android:layout_centerInParent="true"
+        style="@style/WatchFaceDataStyle"
+
+        tools:text="Sunny"/>
+
+</RelativeLayout>
