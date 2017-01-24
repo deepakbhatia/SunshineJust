@@ -133,5 +133,7 @@
 
     <!-- Value in SharedPreferences for cute dogs art pack  option [CHAR LIMIT=NONE] -->
     <string name="pref_art_pack_cute_dogs" translatable="false">https://raw.githubusercontent.com/udacity/Sunshine-Version-2/sunshine_master/app/src/main/res/drawable-mdpi/art_%s.png</string>
+    <string name="error_closing_stream">Error closing stream</string>
 
+    <string name="no_location_app">Couldn't call %s no receiving apps installed!</string>
 </resources>

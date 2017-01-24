@@ -154,19 +154,16 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
-        Log.d("onData:","onCOnnected");
 
     }
 
     @Override
     public void onConnectionSuspended(int i) {
-        Log.d("onData:","onConnectionSuspended:"+i);
 
     }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Log.d("onData:","onConnectionFailed:"+connectionResult.getErrorMessage());
 
     }
 
@@ -310,7 +307,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
                 if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
                     startActivity(intent);
                 } else {
-                    Log.d(LOG_TAG, "Couldn't call " + geoLocation.toString() + ", no receiving apps installed!");
+                    Log.e(LOG_TAG, String.format(getActivity().getString(R.string.no_location_app),geoLocation.toString()));
                 }
             }
 

@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7b9b5b35b1f24fffbfc59987b05481d8ff26cfc4">
+        sha1="71a89a4dc74d001c814763d8046085527214cd09">
         <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_4798cc0faadf5e6d47b690d4c64d136c3d2b6774/classes.dex" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6baa3c6f1a8e0a6eca980a39bddb8eae579e6d03">
+        sha1="f025773aebc3169be7cb3c1401cb81ac650e80c4">
         <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f92fce0b74db63f7cd1430a8faac5d342fe47150/classes.dex" />
     </item>
     <item
@@ -178,7 +178,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ad53564cebb793210e082acdb44ff7a11e32d542">
+        sha1="6f445028fa42b129813d9ec0aa23ac121c72f2ae">
         <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/sunshinewatchface/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c5814a3f0e5cddf17f60ecccb15947202f696f32/classes.dex" />
     </item>
     <item
@@ -313,7 +313,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0eac9fa3088ad7d1a1af25a84b4e4671ef67befc">
+        sha1="0107a83b750aebc353f9f125265eea8c68e17b14">
         <dex dex="/Users/obelix/Documents/udacity_code/SunshineJust/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_721d1a746aa012274aca1c78cf8dbe9e6c23c58c/classes.dex" />
     </item>
     <item

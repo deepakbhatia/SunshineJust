@@ -37,7 +37,6 @@ import android.support.v7.graphics.Palette;
 import android.support.wearable.watchface.CanvasWatchFaceService;
 import android.support.wearable.watchface.WatchFaceService;
 import android.support.wearable.watchface.WatchFaceStyle;
-import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.SurfaceHolder;
@@ -50,7 +49,6 @@ import android.widget.TextView;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.wearable.DataItem;
 import com.google.android.gms.wearable.DataItemBuffer;
 import com.google.android.gms.wearable.Wearable;
 
@@ -179,7 +177,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
 
             mGoogleApiClient.connect();
 
-            setWatchFaceStyle(new WatchFaceStyle.Builder(SunshineWatchFace.this)
+                     setWatchFaceStyle(new WatchFaceStyle.Builder(SunshineWatchFace.this)
                     .setCardPeekMode(WatchFaceStyle.PEEK_MODE_SHORT)
                     .setBackgroundVisibility(WatchFaceStyle.BACKGROUND_VISIBILITY_INTERRUPTIVE)
                     .setShowSystemUiTime(false)
@@ -212,12 +210,12 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
 
             //mBackgroundBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bg);
 
-            //Set Watch Face Background
-            mBackgroundBitmap = Bitmap.createBitmap(320,320, Bitmap.Config.ARGB_8888);
-            Canvas backGround = new Canvas(mBackgroundBitmap);
-            Paint paint = new Paint();
-            paint.setColor(Color.DKGRAY);
-            backGround.drawRect(0F, 0F, (float) specW, (float) specH, paint);
+                     mBackgroundBitmap = Bitmap.createBitmap(320,320, Bitmap.Config.ARGB_8888);
+                     Canvas backGround = new Canvas(mBackgroundBitmap);
+                     Paint paint = new Paint();
+                     //paint.setColor(Color.BLACK);
+                     backGround.drawRect(0F, 0F, (float) specW, (float) specH, paint);
+
 
 
             /* Set defaults for colors */
@@ -305,6 +303,11 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             /* Check and trigger whether or not timer should be running (only in active mode). */
             updateTimer();
         }
+
+      private void watchBackground( int color){
+          //Set Watch Face Background
+
+      }
 
         private void updateWatchHandStyle() {
             if (mAmbient) {
@@ -652,59 +655,11 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             @Override
             public void onResult(DataItemBuffer dataItems) {
 
-                Log.d(TAG, "on Result:watchface:"+dataItems.getCount());
-
-                for (DataItem item : dataItems) {
-                    //processConfigurationFor(item);
-
-                    Log.d(TAG, "on Result:watchface:"+dataItems.getCount());
-
-                    /*if (item.getUri().getPath().compareTo(DATASYNC_URI_WEATHER_INFO) == 0) {
-                        DataMap dataMap = DataMapItem.fromDataItem(item).getDataMap();
-
-                        String highTemp = dataMap.getString(KEY_HIGH_WEATHER_TEMP);
-                        String lowTemp = dataMap.getString(KEY_LOW_WEATHER_TEMP);
-                        String weatherCondition = dataMap.getString(KEY_WEATHER_DESC);
-
-                        Asset asset = dataMap.getAsset(KEY_WEATHER_ICON);
-                        Bitmap bitmap = loadBitmapFromAsset(asset, googleApiClient);
-
-                        WeatherInfo weatherData = WeatherInfo.getCurrentWeatherObject();
-                        weatherData.highTemp = highTemp;
-                        weatherData.lowTemp = lowTemp;
-
-                        Log.d("weatherData.lowTemp",lowTemp);
-                        weatherData.weatherDesc = weatherCondition;
-                        weatherData.weatherIcon = bitmap;
-
-                    }*/
-
-                }
-
                 dataItems.release();
                 invalidateIfNecessary();
             }
         };
 
-        /*@Override
-        public void onDataChanged(DataEventBuffer dataEventBuffer) {
-
-            Log.d(TAG, "Data has changed");
-
-            for (DataEvent event : dataEventBuffer) {
-                if (event.getType() == DataEvent.TYPE_CHANGED) {
-
-
-                    String path = event.getDataItem().getUri().getPath();
-                    if (path.equals(DATASYNC_URI_WEATHER_INFO)) {
-                        Log.d(TAG, "Data has changed");
-
-                    }
-                }
-            }
-
-
-        }*/
 
         private void releaseGoogleApiClient() {
             if (mGoogleApiClient != null && mGoogleApiClient.isConnected()) {

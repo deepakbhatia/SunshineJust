@@ -37,6 +37,7 @@ import com.google.android.gms.wearable.Asset;
 import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
 import com.google.android.gms.wearable.Wearable;
+import com.optimalcities.android.sunshine.app.BuildConfig;
 import com.optimalcities.android.sunshine.app.MainActivity;
 import com.optimalcities.android.sunshine.app.R;
 import com.optimalcities.android.sunshine.app.Utility;
@@ -103,14 +104,13 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
     public static final int LOCATION_STATUS_INVALID = 4;
 
 
-    private String OPEN_WEATHER_MAP_API_KEY = "3cb0b20a63e5129039134ecb31e6e80a";
+    private String OPEN_WEATHER_MAP_API_KEY = BuildConfig.OPEN_WEATHER_MAP_API_KEY;
     public SunshineSyncAdapter(Context context, boolean autoInitialize) {
         super(context, autoInitialize);
     }
 
     @Override
     public void onPerformSync(Account account, Bundle extras, String authority, ContentProviderClient provider, SyncResult syncResult) {
-        Log.d(LOG_TAG, "Starting sync");
         String locationQuery = Utility.getPreferredLocation(getContext());
 
         // These two need to be declared outside the try/catch
@@ -176,7 +176,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
             forecastJsonStr = buffer.toString();
             getWeatherDataFromJson(forecastJsonStr, locationQuery);
         } catch (IOException e) {
-            Log.e(LOG_TAG, "Error ", e);
+            Log.e(LOG_TAG, e.toString());
             setLocationStatus(getContext(), LOCATION_STATUS_SERVER_DOWN);
 
             // If the code didn't successfully get the weather data, there's no point in attempting
@@ -194,7 +194,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                 try {
                     reader.close();
                 } catch (final IOException e) {
-                    Log.e(LOG_TAG, "Error closing stream", e);
+                    Log.e(LOG_TAG, getContext().getString(R.string.error_closing_stream), e);
                 }
             }
         }
@@ -264,15 +264,28 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                         return;
                 }
             }
-            Log.d("onWeather",forecastJson.toString());
             JSONArray weatherArray = forecastJson.getJSONArray(OWM_LIST);
 
             JSONObject cityJson = forecastJson.getJSONObject(OWM_CITY);
             String cityName = cityJson.getString(OWM_CITY_NAME);
 
-            JSONObject cityCoord = cityJson.getJSONObject(OWM_COORD);
-            double cityLatitude = cityCoord.getDouble(OWM_LATITUDE);
-            double cityLongitude = cityCoord.getDouble(OWM_LONGITUDE);
+            double cityLatitude ;
+            double cityLongitude ;
+
+            if(cityJson.has(OWM_COORD)){
+                JSONObject cityCoord = cityJson.getJSONObject(OWM_COORD);
+
+                cityLatitude = cityCoord.getDouble(OWM_LATITUDE);
+
+                cityLongitude = cityCoord.getDouble(OWM_LONGITUDE);
+
+            }else{
+
+                cityLatitude = cityJson.getDouble(OWM_LATITUDE);
+
+                cityLongitude = cityJson.getDouble(OWM_LONGITUDE);
+
+            }
 
             long locationId = addLocation(locationSetting, cityName, cityLatitude, cityLongitude);
 
@@ -373,7 +386,6 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
 
             }
 
-            Log.d(LOG_TAG, "Sync Complete. " + cVVector.size() + " Inserted");
             setLocationStatus(getContext(), LOCATION_STATUS_OK);
 
 
@@ -391,7 +403,6 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                     @Override
                     public void onConnected(@Nullable Bundle bundle) {
 
-                        Log.d("notifyWatch", "onConnected:" + System.currentTimeMillis());
 
                         notifyWatch();
 
@@ -399,14 +410,12 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
 
                     @Override
                     public void onConnectionSuspended(int i) {
-                        Log.d("notifyWatch", "onConnectionSuspended:" + System.currentTimeMillis());
 
                     }
                 })
                 .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
                     @Override
                     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-                        Log.d("notifyWatch", "onConnectionFailed:" + System.currentTimeMillis());
 
                     }
                 })
@@ -456,8 +465,6 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
             putDMR.getDataMap().putString(KEY_LOW_WEATHER_TEMP, Utility.formatTemperature(getContext(), low));
             putDMR.getDataMap().putString(KEY_UPDATE_DATE, "" + System.currentTimeMillis());
             putDMR.getDataMap().putString(KEY_WEATHER_DESC, desc);
-
-            Log.d("DataEvent:AsyncTask", "" +low);
 
             PutDataMapRequest currentRequest = putDMR;
 

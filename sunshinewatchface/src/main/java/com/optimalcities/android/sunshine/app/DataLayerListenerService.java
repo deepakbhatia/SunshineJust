@@ -3,6 +3,7 @@ package com.optimalcities.android.sunshine.app;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -30,37 +31,37 @@ public class DataLayerListenerService extends WearableListenerService {
     private static final String KEY_WEATHER_DESC = "weather_desc";
 
     public DataLayerListenerService(){
-        Log.d(TAG, "Instantiating WearableListenerService object");
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
 
-        Log.d(TAG, "Instantiating WearableListenerService object");
-
     }
 
     @Override
     public void onDataChanged(DataEventBuffer dataEvents) {
         if (Log.isLoggable(TAG, Log.DEBUG)) {
-            Log.d(TAG, "onDataChanged: " + dataEvents);
         }
-
-        Log.d(TAG, "onDataChanged: " + dataEvents);
 
         final List events = FreezableUtils
                 .freezeIterable(dataEvents);
 
         GoogleApiClient googleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(Wearable.API)
+
                 .build();
 
         ConnectionResult connectionResult =
                 googleApiClient.blockingConnect(1, TimeUnit.SECONDS);
 
         if (!connectionResult.isSuccess()) {
-            Log.e(TAG, "Failed to connect to GoogleApiClient.");
+
+            if(connectionResult.getErrorCode() == ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED){
+
+                Toast.makeText(this, R.string.update_google_play_services,Toast.LENGTH_SHORT).show();
+            }
+            Log.e(TAG, "Failed to connect to GoogleApiCLient");
             return;
         }
 
@@ -84,8 +85,6 @@ public class DataLayerListenerService extends WearableListenerService {
                 WeatherInfo weatherData = WeatherInfo.getCurrentWeatherObject();
                 weatherData.highTemp = highTemp;
                 weatherData.lowTemp = lowTemp;
-
-                Log.d("weatherData.lowTemp",lowTemp);
                 weatherData.weatherDesc = weatherCondition;
                 weatherData.weatherIcon = bitmap;
 
@@ -95,7 +94,7 @@ public class DataLayerListenerService extends WearableListenerService {
 
     public Bitmap loadBitmapFromAsset(Asset asset, GoogleApiClient mGoogleApiClient ) {
         if (asset == null) {
-            throw new IllegalArgumentException("Asset must be non-null");
+            throw new IllegalArgumentException("Asset Must not be null");
         }
         ConnectionResult result =
                 mGoogleApiClient.blockingConnect(10000, TimeUnit.MILLISECONDS);
@@ -108,7 +107,7 @@ public class DataLayerListenerService extends WearableListenerService {
         mGoogleApiClient.disconnect();
 
         if (assetInputStream == null) {
-            Log.w(TAG, "Requested an unknown Asset.");
+            Log.w(TAG, "Unkown Asset");
             return null;
         }
         // decode the stream into a bitmap

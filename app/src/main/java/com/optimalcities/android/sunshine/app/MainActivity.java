@@ -23,14 +23,13 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.wearable.Wearable;
-import com.optimalcities.android.sunshine.app.alarms.SuntimeReceiver;
 import com.optimalcities.android.sunshine.app.sync.SunshineSyncAdapter;
 
 public class MainActivity extends ActionBarActivity implements ForecastFragment.Callback,
@@ -40,11 +39,13 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
     private final String LOG_TAG = MainActivity.class.getSimpleName();
     private static final String DETAILFRAGMENT_TAG = "DFTAG";
 
+
     private boolean mTwoPane;
     private String mLocation;
 
     private PendingIntent pendingIntent;
     private GoogleApiClient mGoogleApiClient;
+    private int UPDATE_PLAY_SERVICES  = 2000;
 
     ForecastFragment forecastFragment;
 
@@ -67,9 +68,7 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        /* Retrieve a PendingIntent that will perform a broadcast */
-        Intent alarmIntent = new Intent(this, SuntimeReceiver.class);
-        pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
+
 
 
         if (findViewById(R.id.weather_detail_container) != null) {
@@ -94,13 +93,35 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
                 .findFragmentById(R.id.fragment_forecast));
         forecastFragment.setUseTodayLayout(!mTwoPane);
 
+        GoogleApiAvailability googleApiAvailability = GoogleApiAvailability.getInstance();
 
-        buildGoogleAPIClient();
+        // ########################################################################
+        // Check if Google Play Services is installed. If not show error dialog.
+        int result = googleApiAvailability.isGooglePlayServicesAvailable(this);
+        if( ConnectionResult.SUCCESS == result ){
+            buildGoogleAPIClient();
+
+        }
+        else {
+            // Show appropriate dialog
+
+            googleApiAvailability.getErrorDialog(this,result,UPDATE_PLAY_SERVICES);
+
+        }
 
 
         SunshineSyncAdapter.initializeSyncAdapter(this);
     }
 
+
+    @Override
+    public void startActivityForResult(Intent intent, int requestCode) {
+        super.startActivityForResult(intent, requestCode);
+
+        if(requestCode == UPDATE_PLAY_SERVICES){
+            buildGoogleAPIClient();
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -184,7 +205,6 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
     }
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-        Log.d("onData:main","onCOnnected");
 
     }
 
@@ -195,7 +215,6 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Log.d("onData:main","onConnectionFailed:"+connectionResult.getErrorMessage());
 
     }
 

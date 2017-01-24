@@ -2,4 +2,8 @@
     <string name="app_name">SunshineWatchFace</string>
     <string name="message">Watch face tapped</string>
     <string name="my_analog_name">Sunshine Watch</string>
+    <string name="update_google_play_services">Please, Update Google Play Services</string>
+    <string name="failed_connect_apiclient">Failed to connect to GoogleApiClient.</string>
+    <string name="asset_not_null">Asset must be non-null</string>
+    <string name="unknown_asset">Requested an unknown Asset.</string>
 </resources>

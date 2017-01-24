@@ -6,7 +6,6 @@
     android:paddingStart="@dimen/list_item_extra_padding"
     android:paddingRight="@dimen/list_item_extra_padding"
     android:paddingEnd="@dimen/list_item_extra_padding"
-
     >
 
     <LinearLayout
